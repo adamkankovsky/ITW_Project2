@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, a, p, label, input{
+    font-family: 'Cutive Mono', monospace;
+}
+@media screen and (max-width: 899px) {
+    .menu_full{
+        display: none;
+    }
+    .menu_full a{
+        padding: unset;
+        margin-left: 100vh;
+    }
+    #menu_btn{
+        margin-left: 10px;
+    }
+    .img_text h1{
+        font-size: 40px;
+    }
+    .img_text h3{
+        font-size: 18px;
+    }
+    #my_photo img{
+        width: 300px;
+    }
+    #about_me_photo{
+        width: 300px;
+        height: auto;
+        position:relative;
+        display: block;
+        margin:auto;
+    }
+    #about_me_text{
+        overflow: hidden;
+        width: 400px;
+        margin:auto;
+    }
+    .about_img{
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .about_text{
+        width: 69%;
+        padding: 30px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #born, #education, #hobbys, #features{
+        width: 100%;
+        
+    }
+    #my_photo_label{ 
+        position:absolute;
+        width: 20%;
+        top: -18%;
+        left: -9%;
+    }
+    #socials{
+        display: block;
+    }
+    .slider{
+        width: 70%;
+        margin-right: 20px;
+    }
+    #about_label{
+        display:none;
+    }
+    #skills h1{
+        font-size: 90px;
+        margin-bottom: 40px;
+    }
+    #basic{
+        display: block;
+        padding-left: 30%;
+        float: left;
+    }
+    #pro{
+        display: block;
+        padding-right: 50px;
+        float: right;
+    }
+    #row_1{
+        width: 100%;
+        display: block;
+        float:left;
+        padding-bottom: 60px;
+    }
+    #row_2{
+        width: 100%;
+        display: block;
+        float:left;
+        padding-bottom: 60px;
+    }
+    #form{
+        padding: 20px;
+    }
+    #row_1 h1{
+        margin:auto;
+        display: block;
+    }
+    #row_2 h1{
+        margin:auto;
+        display: block;
+    }
+    #form{
+        margin:auto;
+    }
+}
+@media screen and (min-width: 900px) {
+    .navigation{
+        display: block;
+        float:left;
+    }
+    .nav2{
+        display:block;
+        float: right;
+    }
+    .menu_click{
+        display: none;
+    }
+    .menu_full{
+        display: block;
+    }
+    .img_text h1{
+        font-size: 75px;
+    }
+    .img_text h3{
+        font-size: 30px;
+    }
+    #about_me_text{
+        width: 50%;
+        display: block;
+        float: right;
+    }
+    #about_me_photo{
+        width: 50%;
+        display: block;
+        float: right;
+        height: auto;
+        margin: auto;
+    }
+    #my_photo_label h1{
+        width: 20%;
+        display: block;
+        position: absolute;
+        top:-10%;
+        left: 3%;
+    }
+    #my_photo img{
+        max-width: 500px;
+        display: block;
+        margin: auto;
+        padding: 20px;
+    }
+    #my_photo{
+        max-width: 100%;
+        width: 400px;
+        margin: auto;
+        margin-top: 90px;
+    }
+    #me_photo{
+        max-width: 100%;
+        width: 500px;
+        position: relative;
+        margin: auto;
+    }
+    .about_img{
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .about_img img{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .about_text h2{
+        max-width: 100%;
+    }
+    .about_text{
+        width: 68%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #born, #education, #hobbys, #features{
+        width: 100%;
+        margin: 20px;
+        float: left;
+    }
+    #socials{
+        display: block;
+        margin-left: 150px;
+    }
+    .slider{
+        width: 80%;
+        margin-right: 70px;
+    }
+    #about_text_h{
+        display:none;
+    }
+    #about_label{
+        margin-left: 30px;
+    }
+    #basic{
+        display: block;
+        padding-left: 18%;
+        float: left;
+    }
+    #skills h1{
+        font-size: 90px;
+        padding-left: 60px;
+        margin-bottom: 40px;
+    }
+    #pro{
+        display: block;
+        padding-right: 100px;
+        float: right;
+    }
+    #row_2{
+        width: 60%;
+        display: block;
+        float:left;
+        padding-left: 60px;
+        padding-bottom: 60px;
+    }
+    #row_1{
+        width: 40%;
+        display: block;
+        float:left;
+        padding-bottom: 60px;
+    }
+    #row_1 h1{
+        padding-left: 40px;
+    }
+    #row_2 h1{
+        padding-left: 40px;
+    }
+    #form{
+        padding:40px;
+    }
+}
+h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 20px;
+}
+.navigation li{
+    float: right;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.navigation a:hover{
+    color: silver;
+    border-bottom: 6px solid silver;
+}
+#logo a:hover{
+    border-bottom: none;
+    color: black;
+}
+#logo{
+    float: left;
+}
+.navigation li a{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 14px 25px;
+}
+#header_photo{
+    width: 100%;
+    position: static;
+}
+.header_img{
+    position: relative;
+}
+header img{
+    width: 100%;
+    max-height: 100vh;
+    z-index: 0;
+}
+.img_text{
+    color:white;
+    position: absolute;
+    width: 85%;
+    bottom: 8%;
+    left: 3%;
+}
+footer{
+    clear:both;
+    padding-left:30px;
+    overflow: hidden;
+    background-color: black;
+    color:white;
+}
+#about_me{
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+#about_label h1{
+    font-size: 90px;
+    padding-bottom: 30px;
+}
+#my_photo_label h1{
+    font-size: 90px;
+}
+#facebook img{
+    margin-top: 7px;
+    width: 70px;
+}
+#instagram img{
+    width: 80px;
+}
+#github img{
+    margin-top: 4px;
+    width: 76px;
+}
+#linkedin img{
+    margin-top: 8px;
+    width: 70px;
+}
+#facebook, #instagram, #github, #linkedin{
+    display: block;
+    float: left;
+}
+#skills h2{
+    font-size: 40px;
+}
+#skills{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    overflow: hidden;
+    background-color: silver;
+}
+.skill_obj{
+    min-width: 70px;
+    margin-left: 15px;
+    padding: 30px;
+    clear:both;
+    display: block;
+}
+.skill_obj img{
+    display: block;
+    float:left;
+    width: 70px;
+}
+.slider{
+    background-color:white;
+    float: right;
+    display: block;
+    border: 90px, solid, black;
+}
+.skill{
+    text-align: right;
+    padding-top: 20px;
+    line-height: 40px;
+}
+.html{
+    width: 90%;
+    background-color: black;
+}
+.css{
+    width: 80%;
+    background-color: black;
+}
+.js{
+    width: 30%;
+    background-color: black;
+}
+.java{
+    width: 60%;
+    background-color: black;
+}
+.c{
+    width: 50%;
+    background-color: black;
+}
+.cpp{
+    width: 60%;
+    background-color: black;
+}
+.python{
+    width: 40%;
+    background-color: black;
+}
+#contact{
+    width: 100%;
+    padding-top: 60px;
+}
+#contact h1{
+    font-size: 90px;
+    margin-bottom: 40px;
+}
+#row_1 h1{
+    max-width: 100%;
+}
+#address h2{
+    display: block;
+    margin: auto;
+}
+#address{
+    text-align: left;
+    margin-left: 60px;
+}
+#map{
+    height: 400px;
+    width: 80%;
+    display: block;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+#map_size{
+    width: 100%;
+    display: block;
+}
+input[type=text]{
+    width: 80%;
+    padding: 12px, 20px;
+    height: 50px;
+    font-size: 25px;
+}
+#text{
+    height: 150px;
+}
+input{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+input[type=text]{
+    border: 4px solid #555;
+}
+label{
+    display:block;
+    font-size: 30px;
+}
+#adrr_map{
+    padding: 40px;
+}
+input[type=submit]{
+    background-color: black;
+    color:white;
+    font-size: 30px;
+    width: 40%;
+    height: 60px;
+    text-decoration: none;
+}
